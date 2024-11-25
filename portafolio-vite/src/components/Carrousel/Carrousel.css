@@ -1,0 +1,27 @@
+.slider {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+.slider .list {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.slider .list .item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.slider:hover .item {
+  animation-play-state: paused !important;
+  filter: grayscale(1);
+}
+
+.slider .item:hover {
+  filter: grayscale(0);
+  cursor: pointer;
+}
