@@ -5,28 +5,25 @@ function Card() {
     <div className="card">
       <div className="card-inner">
         <div className="card-front">
-          <div className="card_img container_column">
-            <img src={portail}></img>
-          </div>
           <div className="card_fotter"></div>
           <div
             className="card_content container_column"
             style={{ padding: "4em" }}
           >
-            <p>Christian Camilo Cajiao Chacon</p>
+            <div className="card_img container_column">
+              <img src={portail}></img>
+            </div>
 
-            <p>Cali, Colombia</p>
-
-            <p>English advance</p>
+            <p>Frontend Alchemist</p>
           </div>
         </div>
         <div className="card-back container_colum">
-          <h3>Resume</h3>
           <b>Technical Skills Frontend Development:</b>
           <p>
             Proficient in React.js, including hooks, context, and state
             management libraries like Redux. Strong knowledge of JavaScript
-            (ES6+), HTML5, and CSS3, with an eye for responsive design.
+            (ES6+), HTML5, and CSS3, with an eye for responsive design. Begginer
+            with Next.js and typescript
           </p>
           <b>UI/UX Focus:</b>
           <p>
