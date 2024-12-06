@@ -108,3 +108,29 @@
   align-items: center;
   justify-content: center;
 }
+
+@media (width <= 800px) {
+  .card-front {
+    width: 90vw;
+    height: 50vh;
+
+    margin: 2em;
+    align-self: center;
+  }
+  .card_img {
+    object-fit: contain;
+
+    img {
+      object-fit: contain;
+      width: 150px;
+      height: 150px;
+    }
+  }
+  .card_content {
+    font-size: 30px;
+  }
+  .card-back {
+    width: 80vw;
+    height: 50vh;
+  }
+}

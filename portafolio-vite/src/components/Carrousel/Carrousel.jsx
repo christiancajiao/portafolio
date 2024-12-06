@@ -92,8 +92,10 @@ const imgurls = [
     url: "https://i.postimg.cc/Y0hcQ9Zf/unnamed.jpg",
   },
 ];
-const width = 450;
-const height = 550;
+const width = window.innerWidth <= 800 ? 200 : 450;
+const height = window.innerWidth <= 800 ? 190 : 550;
+
+console.log(window.innerWidth);
 export default function Carrousel() {
   const keyframesStyle = `
   @-webkit-keyframes pulse {
@@ -101,7 +103,6 @@ export default function Carrousel() {
     to { left: calc(${width}px * -1) }
   }
 `;
-  console.log(imgurls.length);
   injectStyle(keyframesStyle);
   return (
     <div className="slider">
@@ -118,7 +119,9 @@ export default function Carrousel() {
                 display: "flex",
                 animation: `pulse 30s linear infinite`,
                 transition: "filter 0.5s",
-                animationDelay: `calc((30s / 18) * ${indx - 1})`,
+                animationDelay: `calc((${
+                  window.innerWidth <= 800 ? 60 : 30
+                }s / 18) * ${indx - 1})`,
               }}
             >
               <img src={img.url} alt={img.name}></img>
