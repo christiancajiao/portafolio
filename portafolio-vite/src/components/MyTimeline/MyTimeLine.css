@@ -60,7 +60,7 @@
     border: 2px solid rgb(235, 178, 56);
     border-radius: 10px;
     width: 20vw;
-    height: 400px;
+    height: auto;
     animation: downscrollltor linear;
     animation-timeline: view();
     animation-range: entry 1% cover 100%;
@@ -73,7 +73,7 @@
     position: relative;
     background-color: white;
     width: 20vw;
-    height: 400px;
+    height: auto;
     background: rgb(49, 108, 143);
     color: rgb(236, 221, 187);
 
@@ -91,7 +91,7 @@
     position: relative;
     background-color: white;
     width: 20vw;
-    height: 400px;
+    height: auto;
     background: rgb(49, 108, 143);
     color: rgb(236, 221, 187);
 
@@ -109,7 +109,7 @@
     position: relative;
     background-color: white;
     width: 20vw;
-    height: 400px;
+    height: auto;
     background: rgb(49, 108, 143);
     color: rgb(236, 221, 187);
 
@@ -127,7 +127,7 @@
     position: relative;
     background-color: white;
     width: 20vw;
-    height: 400px;
+    height: auto;
     background: rgb(49, 108, 143);
     color: rgb(236, 221, 187);
 
@@ -204,6 +204,54 @@
   }
 }
 
+@media (width <= 1200px) {
+  .div1 {
+    grid-area: 2 / 1 / 3 / 4;
+    div {
+      width: 40vw;
+      animation: downscrollltor linear;
+      animation-timeline: view();
+      animation-range: entry 1% cover 100%;
+    }
+  }
+  .div2 {
+    grid-area: 1 / 1 / 2 / 4;
+
+    div {
+      width: 40vw;
+      animation: downscrollrtol linear;
+      animation-timeline: view();
+      animation-range: entry 1% cover 100%;
+    }
+  }
+  .div3 {
+    grid-area: 3 / 1 / 4 / 4;
+    div {
+      width: 40vw;
+      animation: downscrollrtol linear;
+      animation-timeline: view();
+      animation-range: entry 1% cover 100%;
+    }
+  }
+  .div4 {
+    grid-area: 4 / 1 / 5 / 4;
+    div {
+      width: 40vw;
+      animation: downscrollltor ease-in-out;
+      animation-timeline: view();
+      animation-range: entry 1% cover 100%;
+    }
+  }
+  .div5 {
+    grid-area: 5 / 1 / 6 / 4;
+    div {
+      width: 40vw;
+      animation: downscrollrtol linear;
+      animation-timeline: view();
+      animation-range: entry 1% cover 100%;
+    }
+  }
+}
 @media (width <= 800px) {
   .container {
     font-size: 10px;
@@ -228,6 +276,7 @@
       width: 75vw;
       height: 300px;
       animation: none;
+      contain: strict;
     }
   }
   .div2 {

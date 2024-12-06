@@ -92,8 +92,8 @@ const imgurls = [
     url: "https://i.postimg.cc/Y0hcQ9Zf/unnamed.jpg",
   },
 ];
-const width = window.innerWidth <= 800 ? 200 : 450;
-const height = window.innerWidth <= 800 ? 190 : 550;
+const width = window.innerWidth / 4.5;
+const height = window.innerWidth / 4;
 
 console.log(window.innerWidth);
 export default function Carrousel() {
